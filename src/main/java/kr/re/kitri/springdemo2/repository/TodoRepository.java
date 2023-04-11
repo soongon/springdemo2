@@ -18,4 +18,8 @@ public class TodoRepository {
         );
         return todos;
     }
+
+    public Todo selectTodoByTodoId(int todoId) {
+        return new Todo(todoId, "가짜로만듬", false);
+    }
 }

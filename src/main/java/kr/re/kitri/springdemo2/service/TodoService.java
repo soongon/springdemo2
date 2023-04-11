@@ -16,4 +16,8 @@ public class TodoService {
     public List<Todo> viewAllTodos() {
         return todoRepository.selectAllTodos();
     }
+
+    public Todo viewTodoByTodoId(int todoId) {
+        return todoRepository.selectTodoByTodoId(todoId);
+    }
 }
