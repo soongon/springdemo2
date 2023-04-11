@@ -19,3 +19,4 @@ public class SpecialPriceService {
         return productRepository.selectSpecialProducts();
     }
 }
+// https://github.com/soongon/springdemo2
