@@ -20,4 +20,8 @@ public class TodoService {
     public Todo viewTodoByTodoId(int todoId) {
         return todoRepository.selectTodoByTodoId(todoId);
     }
+
+    public void registerTodo(Todo todo) {
+        todoRepository.insertTodo(todo);
+    }
 }

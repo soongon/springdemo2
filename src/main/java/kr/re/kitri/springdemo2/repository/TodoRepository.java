@@ -14,4 +14,6 @@ public interface TodoRepository {
 
     List<Todo> selectAllTodos();
     Todo selectTodoByTodoId(int todoId);
+
+    void insertTodo(Todo todo);
 }
