@@ -10,4 +10,13 @@
                 "isComplete"    as isComplete
         from    todo
     </select>
+    <select id="selectTodoByTodoId"
+            resultType="kr.re.kitri.springdemo2.model.Todo"
+            parameterType="java.lang.Integer">
+        select  id              as id,
+                title           as title,
+                "isComplete"    as isComplete
+        from    todo
+        where   id = #{todoId}
+    </select>
 </mapper>
