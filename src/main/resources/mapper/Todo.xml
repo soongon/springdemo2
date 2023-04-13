@@ -8,7 +8,7 @@
         select  id              as id,
                 title           as title,
                 "isComplete"    as isComplete
-        from    todo
+        from    todos
     </select>
     <select id="selectTodoByTodoId"
             resultType="kr.re.kitri.springdemo2.model.Todo"

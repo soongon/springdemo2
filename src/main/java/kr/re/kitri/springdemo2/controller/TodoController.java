@@ -5,6 +5,7 @@ import kr.re.kitri.springdemo2.service.TodoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @RestController
@@ -15,6 +16,7 @@ public class TodoController {
 
     @GetMapping("/todos")
     public List<Todo> todos() {
+
         return todoService.viewAllTodos();
     }
 
